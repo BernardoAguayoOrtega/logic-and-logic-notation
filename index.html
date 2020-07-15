@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic & logic notation</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+        }
+        
+        .table1 {
+            display: grid;
+            grid-template-columns: repeat(3, 85px);
+            grid-template-rows: repeat(6, 20px);
+            gap: 5px;
+        }
+        
+        .table1>.p1,
+        .p2,
+        .p3 {
+            border: solid 1px black;
+        }
+        
+        .table2 {
+            display: grid;
+            grid-template-columns: repeat(3, 85px);
+            grid-template-rows: repeat(5, 20px);
+            gap: 5px;
+        }
+        
+        .table2>.p1,
+        .p2,
+        .p3 {
+            border: solid 1px black;
+        }
+        
+        .table3 {
+            display: grid;
+            grid-template-columns: repeat(3, 85px);
+            grid-template-rows: repeat(3, 20px);
+        }
+        
+        .table4 {
+            display: grid;
+            grid-template-columns: repeat(3, 85px);
+            grid-template-rows: repeat(5, 20px);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <article>
+                <h1>
+                    Logic
+                </h1>
+                <p>
+                    Logic is the esutdio of a set of sentences is consistent with each other
+                </p>
+                <p>
+                    We can conclude that Logic is the formal science that studies the structure or forms of human thought
+                </p>
+            </article>
+            <hr>
+            <article>
+                <h2>
+                    Propositional logic
+                </h2>
+                <p>
+                    Propositional logic is a branch of mathematical logic which studies the logical relationships between <strong>propositions</strong>(or statements, sentences, assertions) taken as a whole, and connected via logical <strong>connectives</strong>
+                </p>
+                <p>
+                    Propositional logic is also know by the names <strong>sentential logic, propositional calculus & sentencial calculus</strong>
+                </p>
+                <h2>
+                    Fundamental concepts - definitions
+                </h2>
+                <p>
+                    In propositional logic a statement (or proposition) is represented by a symbol(or letter) whose relationship with other statements is defined via a set of symbols (or connectives). The statement is described by it's <strong>truth value</strong>                    which is either <strong>true </strong> or <strong>false</strong>.
+                </p>
+                <h4>
+                    Example
+                </h4>
+                <span>
+                    All elephants are green
+                </span>
+                <hr>
+                <p>
+                    Unlike syllogistic logic, in proposition logic, this statement is taken in its entirety, usually represented by a symbol, and we only cocern orlselves with whether or no it is true or false.
+                </p>
+                <h5>
+                    Preposition Letters
+                </h5>
+                <p>
+                    In a propositional logic, a <strong>proposition</strong> by convention is represented by a capital letter, typically boldface. For example, the proposition above might be represented by the letter <strong>A</strong>
+                </p>
+                <code>
+                    <strong>A:</strong>All elephants are green
+                </code>
+                <h5>
+                    Truth Value
+                </h5>
+                <p>
+                    Each of the <strong>propositions</strong> is assigned a <strong>truth value</strong> of either <strong>true</strong> or <strong>false</strong>. In other areas (for example computer logic gates) these values are given by the binary
+                    representations 1 (true) and 0(false)
+                </p>
+                <h5>
+                    Connectives
+                </h5>
+                <p>
+                    In propositional logic, the relationships between propositions are represented by <strong>connectives.</strong>
+                </p>
+                <p>
+                    There are essentially five different <strong>connectives</strong>
+                </p>
+                <div class="table1">
+                    <p class="p1">connective</p>
+                    <p class="p2">symbol</p>
+                    <p class="p3">description</p>
+
+                    <p class="p4">Negation</p>
+                    <p class="p5">¬</p>
+                    <p class="p6">NOT</p>
+
+                    <p class="p7">Conjugation</p>
+                    <p class="p8">∧</p>
+                    <p class="p9">AND</p>
+
+                    <p class="p10">Disjunction</p>
+                    <p class="p11">∨</p>
+                    <p class="p12">OR</p>
+
+                    <p class="p13">Conditional</p>
+                    <p class="p14">→</p>
+                    <p class="p15">If ... then
+                    </p>
+
+                    <p class="p16">Biconditional</p>
+                    <p class="p17">↔</p>
+                    <p class="p18"> If and only if</p>
+                </div>
+
+                <p>
+                    <small>example</small>
+                </p>
+                <p>
+                    Suppose we wanted to say "If it rains, Jake won't walk to school" <br> We would first represent the two propositions as a proposition
+                    <letter:br></letter:br>
+
+                    A: It rains <br> B: Jake won't walk to school <br> Then we would use the conditional connective to make our statement. <br> A → B
+                </p>
+                <h5>
+                    Truth table Overview
+                </h5>
+                <p>
+                    In order to clarafy the meaning of a proposition or a connective, a <strong>truth table</strong> is used.
+                </p>
+                <p>
+                    True tables are a way of visualizing the truth values of propositions. A value of <strong>true</strong> is represented by a <strong>"1"</strong> and a value of <strong>false</strong> is represnted by a <strong>"0"</strong>
+                </p>
+                <small>Example</small>
+                <p>
+                    Consider the following propositions
+                </p>
+                <ul>
+                    <li>
+                        <strong>A:</strong> Juan wears green boots
+                    </li>
+                    <li>
+                        <strong>B:</strong> Juan has a dog
+                    </li>
+                    <li>
+                        <strong>C:</strong> Juan wears green boots, and has a dog
+                    </li>
+                </ul>
+                <p>
+                    Preposition <strong>C</strong> takes on the following truth values:
+                </p>
+                <ul>
+                    <li>
+                        If Juan doesn't wear green boots and doesn't have a dog, then proposition <strong>C</strong> is <strong>false</strong>.
+                    </li>
+                    <li>
+                        If Juan doesn't wear green boots but has a dog, then proposition <strong>C</strong> is <strong>false</strong>.
+                    </li>
+                    <li>
+                        If Juan wears green boots but doesn't have a dog, then proposition <strong>C</strong> is <strong>false</strong>.
+                    </li>
+                    <li>
+                        If Juan wears green boots and has a dog, then proposition <strong>C</strong> is <strong>true</strong>.
+                    </li>
+                </ul>
+                <p>
+                    Represented in a <strong>Truth table</strong>, we have one row for each of the above statements (which include all possible combinations of Juan wearing green boots and or having a dog) and.
+                </p>
+                <div class="table2">
+                    <p class="p1">A</p>
+                    <p class="p2">B</p>
+                    <p class="p3">C=A∧B</p>
+
+                    <p class="p4">0</p>
+                    <p class="p5">0</p>
+                    <p class="p6">0</p>
+
+                    <p class="p7">0</p>
+                    <p class="p8">1</p>
+                    <p class="p9">0</p>
+
+                    <p class="p10">1</p>
+                    <p class="p11">0</p>
+                    <p class="p12">0</p>
+
+                    <p class="p13">1</p>
+                    <p class="p14">1</p>
+                    <p class="p15">1
+                    </p>
+                </div>
+            </article>
+        </section>
+        <hr>
+        <section>
+            <article>
+                <h2>
+                    Connectives
+                </h2>
+                <h4>
+                    Negation
+                </h4>
+                <p>
+                    <strong>Negation</strong> is a unary logical connective. For any proposition P, the negative of P, denoted ¬P, is a proposition implying that p is false.
+                </p>
+                <small>Table true</small>
+                <div class="table3">
+                    <p><strong>P</strong></p>
+                    <p><strong>¬ P</strong></p>
+
+                    <p>1</p>
+                    <p>0</p>
+
+                    <p>0</p>
+                    <p>1</p>
+                </div>
+                <small>Example</small>
+                <p>
+                    For the proposition: <br> A: The moon is made of green cheese. <br> What is ¬A? <br>
+                </p>
+                <p>
+                    The negation of proposition A, would be a statement which is always true if A is false and always false if A is true. The following statement fits that criteria <br> ¬ A: The moon is not made of green cheese.
+                </p>
+                <hr>
+                <h4>
+                    Conjugation
+                </h4>
+                <p>
+                    Logical conjunction is an associative binary logical connective which evaluates as true only if both of the propositions it relates are true.
+                </p>
+                <small>Table true</small>
+                <div class="table4">
+                    <p><strong>P</strong></p>
+                    <p><strong>q</strong></p>
+                    <p><strong>P ∧ q</strong></p>
+
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+
+                    <p>0</p>
+                    <p>1</p>
+                    <p>0</p>
+
+                    <p>1</p>
+                    <p>0</p>
+                    <p>0</p>
+
+                    <p>1</p>
+                    <p>1</p>
+                    <p>1</p>
+                </div>
+                <br>
+                <small>Example</small>
+                <p>
+                    Consider the following statement: <br> The elephants are green, and George wears red boots. <br> What type of proposition is this? <br>
+                </p>
+                <p>
+                    We can assign propositional letters to these statements: <br> E: Elephants are green <br> G: George wears red boots. <br> Then, the above statement is rewritten as: <br> E ∧ G <br> So, this proposition is a conjunction. <br>
+                </p>
+                <hr>
+                <h4>
+                    Disjunction
+                </h4>
+                <p>
+                    Logical disjunction is an associative binary logical connective which evaluates as true if either of the propositions it relates are true. Note: This is the "inclusive" definition of disjunction, not to be confused with the "exclusive" form equivalent
+                    to an "XOR" gate in computer logic.
+                </p>
+                <small>Table true</small>
+                <div class="table4">
+                    <p><strong>P</strong></p>
+                    <p><strong>q</strong></p>
+                    <p><strong>P ∨ q</strong></p>
+
+                    <p>0</p>
+                    <p>0</p>
+                    <p>1</p>
+
+                    <p>0</p>
+                    <p>1</p>
+                    <p>1</p>
+
+                    <p>1</p>
+                    <p>0</p>
+                    <p>0</p>
+
+                    <p>1</p>
+                    <p>1</p>
+                    <p>1</p>
+                </div>
+                <br>
+                <small>Example</small>
+                <p>
+                    Consider the following statement: <br> The elephants are green, or George wears red boots (or both). <br> Rewrite this using propositional logic. <br>
+                </p>
+                <p>
+                    We can assign propositional letters to these statements: <br> E: Elephants are green <br> G: George wears red boots. <br> Then, the above statement is rewritten as: <br> E ∨ G<br>
+                </p>
+                <hr>
+                <h4>
+                    Conditional
+                </h4>
+                <p>
+                    The logical conditional is the equivalent of the expression "If A then B". The result is true if it is consistent with that statement. The only inconsistent situation is if B is false when A is true. This contradicts the conditional statement. So the
+                    definition is as follows:
+                </p>
+                <small>Table true</small>
+                <div class="table4">
+                    <p><strong>P</strong></p>
+                    <p><strong>q</strong></p>
+                    <p><strong>P → q</strong></p>
+
+                    <p>0</p>
+                    <p>0</p>
+                    <p>0</p>
+
+                    <p>0</p>
+                    <p>1</p>
+                    <p>1</p>
+
+                    <p>1</p>
+                    <p>0</p>
+                    <p>1</p>
+
+                    <p>1</p>
+                    <p>1</p>
+                    <p>1</p>
+                </div>
+                <br>
+                <small>Example</small>
+                <p>
+                    Suppose we have the following statement (compound proposition): <br> If Rebecca finishes her homework, then she can watch Netflix. <br> Is this a logical conditional? <br>
+                </p>
+                <p>
+                    This consists of the two simple propositions that we will call P and Q: <br> P: Rebecca finishes her homework. <br> Q: Rebecca watches Netflix. <br> Then, we can set up the following conditional statement, using a conditional connective:
+                    <br> P → Q <br>
+                </p>
+                <hr>
+                <h4>
+                    Biconditional
+                </h4>
+                <p>
+                    A biconditional is a connective that represents the condition "if and only if". <br> It checks for whether both of the propositions evaluate to the same truth value. It can also be thought of as (A→B)∧(B→A). <br>
+                </p>
+                <small>Table true</small>
+                <div class="table4">
+                    <p><strong>P</strong></p>
+                    <p><strong>q</strong></p>
+                    <p><strong>P ↔ q</strong></p>
+
+                    <p>0</p>
+                    <p>0</p>
+                    <p>1</p>
+
+                    <p>0</p>
+                    <p>1</p>
+                    <p>0</p>
+
+                    <p>1</p>
+                    <p>0</p>
+                    <p>0</p>
+
+                    <p>1</p>
+                    <p>1</p>
+                    <p>1</p>
+                </div>
+                <br>
+                <small>Example</small>
+                <p>
+                    What type of logic proposition is this?: <br> We will cancel the parade if and only if it rains. <br>
+                </p>
+                <p>
+                    This is equivalent to saying. "If it rains we will cancel the parade, and if we cancel the parade then it's raining." Note: This doesn't imply causation. That is, it doesn't imply that because we cancelled the parade it is raining. In fact it just means
+                    that if it isn't raining, we will definitely hold the parade.
+                    <br>
+                    <br> We set up the following propositions:
+                    <br>
+                    <br> P: We will cancel the parade.
+                    <br> Q: It rains.
+                    <br> Then we write our compound proposition as:
+                    <br> P↔Q
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
